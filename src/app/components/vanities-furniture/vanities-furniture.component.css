@@ -1,0 +1,34 @@
+
+::ng-deep .p-card {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+::ng-deep .p-card-title {
+  text-align: center
+}
+
+.vanities-body {
+  text-align: center;
+}
+
+.items-on-sale {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 27px;
+  margin-top: 15px;
+  background: #df0048;
+  padding: 20px 15px;
+  color: white;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
+

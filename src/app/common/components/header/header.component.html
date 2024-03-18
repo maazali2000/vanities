@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="logo-container">
+    <img src="assets\images\logo.png" alt="">
+  </div>
+  <div class="search-container">
+    <span class="p-input-icon-left search-item">
+      <i class="pi pi-search"></i>
+      <input type="text" pInputText [(ngModel)]="searchItems" />
+    </span>
+  </div>
+  <nav class="navigation">
+    <p-button class="header-top-btns" label="About" severity="secondary"></p-button>
+    <p-button class="header-top-btns" label="Brands" severity="secondary"></p-button>
+    <p-button class="header-top-btns" label="Cart" severity="secondary"></p-button>
+    <p-button class="header-top-btns" label="Login" severity="secondary"></p-button>
+    <a href="#">
+      <p-button class="header-top-btns" label="Whatsapp"></p-button>
+    </a>
+    <!-- Add other navigation links here -->
+  </nav>
+</header>
