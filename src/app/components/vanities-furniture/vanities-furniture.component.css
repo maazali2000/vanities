@@ -32,6 +32,24 @@
   margin: auto;
 }
 
-.brands-at{
-    text-align:center;
+.brands-at {
+  text-align: center;
 }
+
+.social-links {
+  margin-top: 15px;
+  padding: 10px 0;
+  background: black;
+  color: white;
+}
+
+.social-inner-cont {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+  .social-inner-cont i {
+    font-size: 30px;
+  }
