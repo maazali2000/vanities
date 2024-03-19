@@ -1,0 +1,27 @@
+.head {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.filter {
+  font-size: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.size {
+  margin-right: 30px;
+}
+.mater {
+  margin-left: 30px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+p-card {
+  padding-top: 120px;
+  margin-bottom: 30px;
+}
