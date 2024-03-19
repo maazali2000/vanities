@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { FieldsetModule } from 'primeng/fieldset';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,6 +14,7 @@ import { PvcVanitiesComponent } from './components/pvc-vanities/pvc-vanities.com
 import { DropdownModule } from 'primeng/dropdown';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSelectModule } from '@angular/material/select';
+import { PanelModule } from 'primeng/panel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,8 @@ import { MatSelectModule } from '@angular/material/select';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
+    FieldsetModule,
+    PanelModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
