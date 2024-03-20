@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-interface Food {
+interface Size {
+  value: number;
+  viewValue: number;
+}
+interface Material {
   value: string;
   viewValue: string;
 }
@@ -10,9 +14,13 @@ interface Food {
   styleUrl: './pvc-vanities.component.css',
 })
 export class PvcVanitiesComponent {
-  foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
+  sizes: Size[] = [
+    { value: 24 - 0, viewValue: 24 },
+    { value: 32 - 1, viewValue: 32 },
+    { value: 40 - 2, viewValue: 40 },
+  ];
+  materials: Material[] = [
+    { value: 'Aluminium - 0', viewValue: 'Aluminium' },
+    { value: ' Pvc- 1', viewValue: 'Pvc' },
   ];
 }
