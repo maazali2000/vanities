@@ -21,15 +21,29 @@
       </select>
     </div>
   </div> -->
-  <div class="drop">
-    <mat-form-field>
-      <mat-label>Favorite food</mat-label>
-      <mat-select>
-        @for (food of foods; track food) {
-        <mat-option [value]="food.value">{{ food.viewValue }}</mat-option>
-        }
-      </mat-select>
-    </mat-form-field>
+  <div class="filter">
+    <div class="size">
+      <mat-form-field>
+        <mat-label>Size</mat-label>
+        <mat-select>
+          @for (size of sizes; track size) {
+          <mat-option [value]="size.value">{{ size.viewValue }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="mater">
+      <mat-form-field>
+        <mat-label>Material</mat-label>
+        <mat-select>
+          @for (material of materials; track material) {
+          <mat-option [value]="material.value">{{
+            material.viewValue
+          }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
   </div>
   <div class="products">
     <p-card
