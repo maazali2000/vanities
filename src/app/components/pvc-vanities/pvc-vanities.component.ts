@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Component } from '@angular/core';
+
 interface Size {
   value: number;
   viewValue: number;
@@ -14,7 +14,7 @@ interface Quality {
   templateUrl: './pvc-vanities.component.html',
   styleUrl: './pvc-vanities.component.css',
 })
-export class PvcVanitiesComponent implements OnInit {
+export class PvcVanitiesComponent {
   selectedsize: Size | undefined;
   selectedQuality: Size | undefined;
   sizes: Size[] = [
@@ -28,7 +28,4 @@ export class PvcVanitiesComponent implements OnInit {
     { name: 'Premium', value: 2 },
   ];;
  
-
-  ngOnInit() {
-  }
 }

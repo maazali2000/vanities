@@ -16,12 +16,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSelectModule } from '@angular/material/select';
 import { PanelModule } from 'primeng/panel';
 import { RouterModule } from '@angular/router';
+import { ProductDescriptionComponent } from './components/product-description/product-description.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     VanitiesFurnitureComponent,
     PvcVanitiesComponent,
+    ProductDescriptionComponent,
   ],
   imports: [
     BrowserModule,
