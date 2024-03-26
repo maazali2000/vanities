@@ -1,27 +1,8 @@
 <div class="container">
   <div class="head">
-    <h1>ALUMINUM BATHROOM VANITIES</h1>
+    <h1>BATHROOM VANITIES</h1>
   </div>
-  <!--
-  <div class="filter">
-    <div class="size">
-      <label for="size">Size:</label>
-      <select id="size" name="cars">
-        <option value="24">24</option>
-        <option value="32">32</option>
-        <option value="40">40</option>
-        <option value="48">48</option>
-      </select>
-    </div>
-    <div class="mater">
-      <label for="">Material:</label>
-      <select id="" name="c ">
-        <option value="Aluminium">Aluminium</option>
-        <option value="Pvc">Pvc</option>
-      </select>
-    </div>
-  </div> -->
-  <div class="filter">
+  <!--<div class="filter">
     <div class="size">
       <mat-form-field>
         <mat-label>Size</mat-label>
@@ -37,16 +18,31 @@
         <mat-label>Material</mat-label>
         <mat-select>
           @for (material of materials; track material) {
-          <mat-option [value]="material.value">{{
+          <mat-option [value]="material.value">
+            {{
             material.viewValue
-          }}</mat-option>
+            }}
+          </mat-option>
           }
         </mat-select>
       </mat-form-field>
     </div>
-  </div>
+  </div>-->
   <div class="products">
-    <p-card
+    <p-card header="Aluminum Vanity"
+            subheader="Rs.5000"
+            >
+      <div class="size-and-quality">
+        <p-dropdown [options]="sizes" [style]="{ 'width': '45%', 'margin-right': '20px' }" [(ngModel)]="selectedsize" optionLabel="value" [showClear]="true" placeholder="Size"></p-dropdown>
+        <p-dropdown [options]="qualities" [style]="{ width: '45%' }" [(ngModel)]="selectedQuality" optionLabel="name" [showClear]="true" placeholder="Quality"></p-dropdown>
+      </div>
+        <ng-template pTemplate="header">
+          <img alt="Card" src="assets\images\cat-1.png" />
+        </ng-template>
+        
+        <p-button class="cart-btn" label="Add to cart" [outlined]="true"></p-button>
+</p-card>
+    <!--<p-card
       header="Aluminum Vanity"
       subheader="Rs.5000"
       [style]="{ width: '360px' }"
@@ -185,16 +181,6 @@
         <img alt="Card" src="assets\images\cat-1.png" />
       </ng-template>
       <p-button label="Add to cart" [outlined]="true"></p-button>
-    </p-card>
-    <p-card
-      header="Aluminum Vanity"
-      subheader="Rs.5000"
-      [style]="{ width: '360px' }"
-    >
-      <ng-template pTemplate="header">
-        <img alt="Card" src="assets\images\cat-1.png" />
-      </ng-template>
-      <p-button label="Add to cart" [outlined]="true"></p-button>
-    </p-card>
+    </p-card>-->
   </div>
 </div>

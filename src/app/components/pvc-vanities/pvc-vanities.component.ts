@@ -1,26 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 interface Size {
   value: number;
   viewValue: number;
 }
-interface Material {
-  value: string;
-  viewValue: string;
+
+interface Quality {
+  name: string;
+  value: number;
 }
 @Component({
   selector: 'van-pvc-vanities',
   templateUrl: './pvc-vanities.component.html',
   styleUrl: './pvc-vanities.component.css',
 })
-export class PvcVanitiesComponent {
+export class PvcVanitiesComponent implements OnInit {
+  selectedsize: Size | undefined;
+  selectedQuality: Size | undefined;
   sizes: Size[] = [
-    { value: 24 - 0, viewValue: 24 },
-    { value: 32 - 1, viewValue: 32 },
-    { value: 40 - 2, viewValue: 40 },
+    { value: 24, viewValue: 24 },
+    { value: 32, viewValue: 32 },
+    { value: 40, viewValue: 40 },
   ];
-  materials: Material[] = [
-    { value: 'Aluminium - 0', viewValue: 'Aluminium' },
-    { value: ' Pvc- 1', viewValue: 'Pvc' },
-  ];
+  qualities: Quality[] | undefined = [
+    { name: 'Normal', value: 0 },
+    { name: 'Standard', value: 1 },
+    { name: 'Premium', value: 2 },
+  ];;
+ 
+
+  ngOnInit() {
+  }
 }

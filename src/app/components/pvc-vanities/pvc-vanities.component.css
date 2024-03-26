@@ -3,6 +3,7 @@
   color: goldenrod;
   border-bottom: 1px solid black;
 }
+
 .filter {
   font-size: 20px;
   padding-top: 30px;
@@ -13,19 +14,32 @@
 .products {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
+  width: 100%;
   margin: auto;
   justify-content: space-evenly;
 }
+
 p-card {
-  padding-top: 120px;
+  padding-top: 20px;
   margin-bottom: 30px;
+  width:25%;
 }
+
 .size {
   margin-right: 30px;
   margin-top: 30px;
 }
+
 .mater {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+::ng-deep .cart-btn .p-button-outlined {
+  width: 100% !important;
+}
+.size-and-quality {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
