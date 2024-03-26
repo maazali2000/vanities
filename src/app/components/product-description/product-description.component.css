@@ -1,0 +1,59 @@
+.pcard {
+  padding-top: 30px;
+}
+.main {
+  display: flex;
+}
+.des {
+  padding-left: 30px;
+  color: black;
+  font-size: larger;
+}
+
+.amnt {
+  padding-left: 100px;
+  color: darkblue;
+
+  font-weight: bold;
+  font-size: x-large;
+}
+.des1 {
+  display: flex;
+}
+.descrip {
+  margin-top: 30px;
+}
+.descrip h3 {
+  margin: 10px 0;
+}
+.shiping {
+  display: flex;
+  margin-bottom: 30px;
+}
+.shipname {
+  font-size: small;
+
+  font-weight: 400;
+  color: grey;
+}
+.freship {
+  padding-left: 10px;
+}
+.EasyReturn {
+  display: flex;
+  margin-bottom: 30px;
+}
+.easyreturnname {
+  font-size: small;
+
+  font-weight: 400;
+  color: grey;
+}
+.eaship {
+  padding-left: 10px;
+}
+.btn-whatsapp {
+  font-size: 50px;
+  color: green;
+  margin-left: 95%;
+}
