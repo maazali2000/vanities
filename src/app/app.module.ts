@@ -15,6 +15,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSelectModule } from '@angular/material/select';
 import { PanelModule } from 'primeng/panel';
+import { RouterModule } from '@angular/router';
 import { ProductDescriptionComponent } from './components/product-description/product-description.component';
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ProductDescriptionComponent } from './components/product-description/pr
     ReactiveFormsModule,
     MatSelectModule,
     FieldsetModule,
-    PanelModule
+    PanelModule,
+    RouterModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
