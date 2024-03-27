@@ -1,0 +1,24 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>Admin Portal</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <mat-form-field class="w-100per">
+          <mat-label>Username</mat-label>
+          <input formControlName="userName" class="form-control" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="w-100per">
+          <mat-label>Password:</mat-label>
+          <input formControlName="password" id="password" class="form-control" matInput>
+        </mat-form-field>
+      </div>
+      <re-captcha class="re-captcha" (resolved)="resolved($event)" siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></re-captcha>
+      <button class="w-100per m-t-10px" mat-raised-button color="accent">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
